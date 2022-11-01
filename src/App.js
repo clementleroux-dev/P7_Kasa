@@ -1,14 +1,8 @@
+import LodgeContainer from "./components/lodge-container/lodge-container.component";
+import lodgings from "./data/logements.json";
+
 const App = () => {
-  return (
-    <div className="lodgings-container">
-      <div className="lodge-container">
-        {/*<img />*/}
-        <div className="lodge-title">
-          <h2>Titre de la location</h2>
-        </div>
-      </div>
-    </div>
-  );
+  return <LodgeContainer lodgings={lodgings} />;
 };
 
 export default App;
